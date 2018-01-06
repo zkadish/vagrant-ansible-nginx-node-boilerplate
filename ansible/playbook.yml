@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  vars: 
+    document_root: /vagrant
+  
+  roles:
+    - common
+    - nginx
+    - node
+    
